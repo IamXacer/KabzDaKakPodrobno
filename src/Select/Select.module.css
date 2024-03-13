@@ -13,11 +13,11 @@
 }
 
 .item:hover {
-    background-color: #1ea7fd;
+    background-color: #1efd3c;
     color: white;
 }
 
 .item.selected {
-    background-color: #1ea7fd;
+    background-color: #31ce2c;
     color: white;
 }
