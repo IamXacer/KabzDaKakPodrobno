@@ -49,7 +49,8 @@ export const Select = (props: SelectPropsType) => {
     return (
         <>
             <div className={styles.select} onClick={setEditHandler}
-                 onKeyUp={onKeyUp} tabIndex={0}
+                 onKeyUp={onKeyUp}
+                 tabIndex={0}
             >
             <span className={styles.main}>
                         {selectedItem && selectedItem.title}

@@ -1,0 +1,43 @@
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+    transition: transform 0.1s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.secondHand {
+    width: 1px;
+    height: 45%;
+    background-color: red;
+}
+
+.minuteHand {
+    width: 3px;
+    height: 40%;
+    background-color: black;
+}
+
+.hourHand {
+    width: 5px;
+    height: 30%;
+    background-color: black;
+}
+
+.center {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
