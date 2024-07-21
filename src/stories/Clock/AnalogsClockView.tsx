@@ -3,6 +3,7 @@ import styles from "./Clock.module.css";
 import {ClockViewPropsTypes} from "./Clock";
 
 export const AnalogsClockView: React.FC<ClockViewPropsTypes> = ({data}) => {
+/*
     useEffect(() => {
         const intervalId = setInterval(() => {
             setDate(new Date());
@@ -10,10 +11,11 @@ export const AnalogsClockView: React.FC<ClockViewPropsTypes> = ({data}) => {
 
         return () => clearInterval(intervalId); // Очистка интервала при размонтировании компонента
     }, []);
+*/
 
-    const seconds = date.getSeconds();
-    const minutes = date.getMinutes();
-    const hours = date.getHours();
+    const seconds = data.getSeconds();
+    const minutes = data.getMinutes();
+    const hours = data.getHours();
 
     const secondDegree = (seconds / 60) * 360;
     const minuteDegree = (minutes / 60) * 360 + (seconds / 60) * 6;
