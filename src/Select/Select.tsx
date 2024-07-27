@@ -30,7 +30,7 @@ export const Select = (props: SelectPropsType) => {
                         <div className={`${styles.item} ${hoverElement === i.value ? styles.selected : ''}`}
                             onClick={()=>props.onChange(i.value)}
                              onMouseEnter={(e)=>sethoverElement(i.value)}
-                    >{i.title}</div>)}
+                        >{i.title}</div>)}
                 </div>}
 
 
